@@ -1,0 +1,23 @@
+/**
+ * Basic typography style for copy text
+ */
+body {
+  color: $desc-color;
+  font: normal 125% / 1.4;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  @extend %m-0;
+  @extend %p-0;
+}
+
+a {
+  @extend %d-inline-block;
+  text-decoration: none;
+
+  &:hover {
+    color: $theme-color;
+  }
+}

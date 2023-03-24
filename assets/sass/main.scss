@@ -1,0 +1,68 @@
+/*!
+<----------------------------------------
+  Template Name: SobTheme
+  Template URI: https: //themeforest.net/user/labartisan
+  Author: LabArtisan
+  Author URI: https: //themeforest.net/user/labartisan
+  Description: SobTheme Multipurpose HTML Template.
+  Version: 1.0.0
+  Tags: multipurpose, dating,agrical,medical,islamic,cripto,nft, agency, blog, business, company, consultancy, Consulting Agency, corporate, creative, finance, marketing, portfolio, professional, responsive, template investment
+---------------------------------------->
+*/
+/*
+>>> TABLE OF CONTENTS:
+<----------------------------------------------------------------
+  01. Global css
+  02. header
+	*Main Menu
+    *Mobile Menu
+	*Page Header
+	*Breadcamp
+  03. Banner
+  04. Service
+    * Service Single
+  05. About
+  06. Progress
+  07. Case Study
+	*Case Study Single
+  08. Advisors
+  09. Testimonial
+  10. Faq
+  11. Achievement
+  12. Support
+  13. Blog
+  14. Product
+	* Related Poduct
+  15. Cart
+  16. Blog
+	* Blog Single
+  17. Contact Us
+	* Contact
+  18. Newsletter
+  19. video
+  20. consulting
+  21. Counter Up
+  22. Pricing
+  23. Sponsor
+  24. 404
+  25. Cooming Soon
+  26. Gmaps Section
+  27. Footer
+---------------------------------------------------------------->
+*/
+
+
+
+// Core variables and mixins
+@import "base/_variables", "base/_extend", "base/_mixins", "base/_typography";
+@import "vendors/rfs";
+
+// Core CSS
+@import "sub-stylesheet/_header";
+@import "sub-stylesheet/_mobile_nav";
+@import "sub-stylesheet/_banner";
+@import "sub-stylesheet/_home";
+@import "sub-stylesheet/_blog";
+@import "sub-stylesheet/_global";
+@import "sub-stylesheet/_footer";
+// Components

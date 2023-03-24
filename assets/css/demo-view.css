@@ -1,0 +1,160 @@
+.common-spinner {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: #000366;
+    z-index: 99999;
+    top: 20%;
+    right: 20px;
+    font-size: 30px;
+    color: #fff;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    animation: fa-spin 4s infinite linear;
+    cursor: pointer;
+    box-shadow: 0 0 10px #ffffffad;
+	display: none;
+}
+
+@keyframes fa-spin {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(359deg);
+      transform: rotate(359deg);
+    }
+}
+.common-demo {
+    position: fixed;
+    z-index: 99999;
+    height: 100vh;
+    overflow-y: auto;
+    left: 100%;
+    background: #000000bf;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.common-demo.open {
+    width: 100%;
+    left: 0;
+}
+.common-demo.open .sidebar-close {
+    position: fixed;
+}
+.common-demo.open .common-demo-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVBAMAAABbObilAAAAMFBMVEVMaXH////////////////////////////////////////////////////////////6w4mEAAAAD3RSTlMAlAX+BKLcA5+b6hJ7foD4ZP1OAAAAkUlEQVR4XkWPoQ3CUBQAL4SktoKAbCUjgAKLJZ2ABYosngTJCHSD6joUI6BZgqSoB/+Shqde7sS9x3OGk81fdO+texMtRVTia+TsQtHEUJLdohJfgNNPJHyEJPZTsWLoxShqsWITazEwqePAn69Sw2TUxk1+euPis3EwaXy8RMHSZBIlRcKKnC5hRctjMf57/wJbBlAIs9k1BAAAAABJRU5ErkJggg==), progress;
+}
+.common-demo .common-demo-close {
+    position: absolute;
+    content: "";
+    -webkit-border-radius: 4px 0 0 4px;
+    -moz-border-radius: 4px 0 0 4px;
+    border-radius: 4px 0 0 4px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    z-index: 1;
+    font-size: 24px;
+    top: 0;
+    right: 75%;
+    cursor: pointer;
+    color: #fff;
+    background: #fd4372;
+}
+@media (min-width: 1200px) {
+    .common-demo .common-demo-close {
+      right: 45%;
+    }
+}
+.common-demo .common-demo-area {
+    max-width: 75%;
+    margin-left: auto;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(136, 136, 136, 0.3);
+    position: relative;
+    z-index: 99;
+}
+@media (min-width: 1200px) {
+    .common-demo .common-demo-area {
+      max-width: 45%;
+    }
+}
+.common-demo .common-demo-area .common-demo-gallery {
+    padding: 20px;
+}
+.common-demo .common-demo-area .common-demo-gallery .demo-thumb {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.common-demo .common-demo-area .common-demo-gallery .demo-thumb img {
+    width: 100%;
+}
+.common-demo .common-demo-area .common-demo-gallery .demo-thumb:hover::after {
+    transform: scale(1);
+}
+.common-demo .common-demo-area .common-demo-gallery .demo-thumb:hover .demo-content {
+    -webkit-transform: translate(-50%, -50%) scale(1);
+    -ms-transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -50%) scale(1);
+}
+.common-demo .common-demo-area .common-demo-gallery .demo-thumb::after {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    content: "";
+    background: rgba(0, 0, 0, 0.7);
+    transform: scale(0);
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.common-demo .common-demo-area .common-demo-gallery .demo-thumb .demo-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 94%;
+    text-align: center;
+    z-index: 1;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    -webkit-transform: translate(-50%, -50%) scale(0);
+    -ms-transform: translate(-50%, -50%) scale(0);
+    transform: translate(-50%, -50%) scale(0);
+}
+.common-demo .common-demo-area .common-demo-gallery .demo-thumb .demo-content h4 {
+    margin-bottom: 15px;
+    color: #fff;
+    font-size: 24px;
+    font-family: roboto;
+}
+.common-demo .common-demo-area .common-demo-gallery .demo-thumb .demo-content .demo-btn {
+    padding: 10px 20px;
+    color: #fff;
+    background: #fd4372;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    display: inline-block;
+}
+  
+  
